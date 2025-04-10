@@ -1,0 +1,24 @@
+map:{
+    ; 2025/04/10 09:31:34.776 = map:{
+        ; diffDate = 2025/04/10 09:31:34.776
+        ; tableCount = map:{
+            ; next = 3
+            ; previous = 0
+        }
+        ; diffAuthor = minek
+        ; tableDiff = map:{
+            ; id_test = map:{
+                ; tableName = id_test
+                ; diffType = ADD
+            }
+            ; key_test = map:{
+                ; tableName = key_test
+                ; diffType = ADD
+            }
+            ; test_table = map:{
+                ; tableName = test_table
+                ; diffType = ADD
+            }
+        }
+    }
+}

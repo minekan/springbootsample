@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>テスト</title>
+</head>
+
+<body>
+	<p th:text="${msg}"></p>
+	<form method="post" action="/mavform">
+		<input type="text" name="text1" th:value="${value}">
+		<input type="submit" value="実行">
+	</form>
+</body>
+
+</html>
