@@ -85,7 +85,7 @@
     	<dependency>
         	<groupId>org.dbflute</groupId>
         	<artifactId>dbflute-runtime</artifactId>
-        	<version>1.1.0</version>
+        	<version>1.2.8</version>
     	</dependency>	</dependencies>
 
 	<build>
@@ -119,8 +119,8 @@
                 <artifactId>dbflute-maven-plugin</artifactId>
                 <version>1.1.0</version>
                 <configuration>
-                    <clientProject>xxxdb</clientProject>
-                    <packageBase>com.xxx.dbflute</packageBase>
+                    <clientProject>sampledb</clientProject>
+                    <packageBase>com.example,springbootsample.dbflute</packageBase>
                 </configuration>
             </plugin>
 		</plugins>

@@ -1,5 +1,6 @@
 package com.example.springbootsample.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,8 +9,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.springbootsample.dbflute.exbhv.IdTestBhv;
+
+
 @Controller
 public class SpringbootsampleController {
+	@Autowired
+	private IdTestBhv idBhv;
+
 	@GetMapping("/")
 	@PostMapping("/")
 	public String index() {
@@ -51,6 +58,15 @@ public class SpringbootsampleController {
 		mav.setViewName("index3");
 		mav.addObject("msg", "こんにちは" + str + "さん！");
 		mav.addObject("value", str);
+		return mav;
+	}
+
+	@SuppressWarnings("unchecked")
+	@GetMapping("/dblist")
+	public ModelAndView dblist(ModelAndView mav) {
+
+		mav.setViewName("index3");
+		mav.addObject("msg", "こんにちは" + String.valueOf(idBhv.selectCount(cb->{})) + "件です！");
 		return mav;
 	}
 }
