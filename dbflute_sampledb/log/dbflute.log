@@ -1895,3 +1895,303 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
     repsEnvType      = ut
     refreshProject   = $$AutoDetect$$
 _/_/_/_/_/_/_/_/_/_/ {Sql2Entity}
+2025-04-13 20:34:36,961 [main] INFO  (TorqueJDBCTransformTask#begin():104) - +------------------------------------------+
+2025-04-13 20:34:36,963 [main] INFO  (TorqueJDBCTransformTask#begin():105) - |                                          |
+2025-04-13 20:34:36,963 [main] INFO  (TorqueJDBCTransformTask#begin():106) - |                   JDBC                   |
+2025-04-13 20:34:36,963 [main] INFO  (TorqueJDBCTransformTask#begin():107) - |                                          |
+2025-04-13 20:34:36,963 [main] INFO  (TorqueJDBCTransformTask#begin():108) - +------------------------------------------+
+2025-04-13 20:34:36,984 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2025-04-13 20:34:36,985 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2025-04-13 20:34:36,985 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/postgres
+2025-04-13 20:34:36,985 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = postgres
+2025-04-13 20:34:37,012 [main] INFO  (DfSchemaXmlSerializer#serialize():305) - 
+2025-04-13 20:34:37,012 [main] INFO  (DfSchemaXmlSerializer#serialize():306) - ...Starting to process JDBC to SchemaXML
+2025-04-13 20:34:37,012 [main] INFO  (DfSchemaXmlSerializer#doLoadPreviousSchema():1559) - ...Loading previous schema (schema diff process)
+2025-04-13 20:34:37,019 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2025-04-13 20:34:37,064 [main] INFO  (DfSchemaXmlSerializer#generateXML():379) - ...Getting DB connection
+2025-04-13 20:34:37,072 [main] INFO  (DfDataSourceHandler#createConnection():166) - ...Connecting to database by data source:
+2025-04-13 20:34:37,325 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():233) -   product = PostgreSQL 17.4
+2025-04-13 20:34:37,325 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():234) -   driver  = PostgreSQL JDBC Driver 42.2.10 for JDBC 4.2
+2025-04-13 20:34:37,332 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2025-04-13 20:34:37,333 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2025-04-13 20:34:37,334 [main] INFO  (DfSchemaXmlSerializer#generateXML():382) - ...Getting DB meta data
+2025-04-13 20:34:37,335 [main] INFO  (DfTableExtractor#doGetTableList():66) - ...Getting tables:
+2025-04-13 20:34:37,336 [main] INFO  (DfTableExtractor#doGetTableList():67) -   schema = {postgres.public as main}
+2025-04-13 20:34:37,336 [main] INFO  (DfTableExtractor#doGetTableList():68) -   types  = [TABLE, VIEW]
+2025-04-13 20:34:37,389 [main] INFO  (DfSchemaXmlSerializer#processTable():438) - 
+2025-04-13 20:34:37,389 [main] INFO  (DfSchemaXmlSerializer#processTable():439) - $ /= = = = = = = = = = = = = = = = = = = = = = = = = =
+2025-04-13 20:34:37,389 [main] INFO  (DfSchemaXmlSerializer#processTable():440) - $ [Table List]
+2025-04-13 20:34:37,391 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():520) - $ postgres.public.id_test(TABLE)
+2025-04-13 20:34:37,464 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():520) - $ postgres.public.key_test(TABLE)
+2025-04-13 20:34:37,486 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():520) - $ postgres.public.test_table(TABLE)
+2025-04-13 20:34:37,503 [main] INFO  (DfSchemaXmlSerializer#processTable():452) - $ 
+2025-04-13 20:34:37,504 [main] INFO  (DfSchemaXmlSerializer#processTable():453) - $ [Table Count]
+2025-04-13 20:34:37,504 [main] INFO  (DfSchemaXmlSerializer#processTable():454) - $ 3
+2025-04-13 20:34:37,504 [main] INFO  (DfSchemaXmlSerializer#processTable():455) - $ = = = = = = = = = =/
+2025-04-13 20:34:37,504 [main] INFO  (DfSchemaXmlSerializer#processTable():456) - 
+2025-04-13 20:34:37,506 [main] INFO  (DfSchemaXmlSerializer#processSequence():823) - ...Getting sequences
+2025-04-13 20:34:37,508 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2025-04-13 20:34:37,509 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2025-04-13 20:34:37,520 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+2025-04-13 20:34:37,520 [main] INFO  (DfSchemaXmlSerializer#processSequence():828) - ...Processing sequences: 0
+2025-04-13 20:34:37,520 [main] INFO  (DfSchemaXmlSerializer#serialize():320) - ...Serializing XML:
+2025-04-13 20:34:37,520 [main] INFO  (DfSchemaXmlSerializer#serialize():321) -   filePath = ./schema/project-schema-sampledb.xml
+2025-04-13 20:34:37,520 [main] INFO  (DfSchemaXmlSerializer#serialize():322) -   encoding = UTF-8
+2025-04-13 20:34:37,530 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1570) - ...Loading next schema (schema diff process)
+2025-04-13 20:34:37,532 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2025-04-13 20:34:37,557 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1585) -  -> same as previous (schema diff)
+2025-04-13 20:34:37,557 [main] INFO  (DfDataSourceHandler#destroy():120) - ...closeReally()
+2025-04-13 20:34:37,565 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m00s608ms
+
+  DBFLUTE_CLIENT: {sampledb}
+    database  = postgresql (PostgreSQL 17.4)
+    language  = java
+    container = spring
+    package   = com.example.springbootsample.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver (PostgreSQL JDBC Driver 42.2.10 for JDBC 4.2)
+    url    = jdbc:postgresql://localhost:5432/postgres
+    schema = {postgres.public as main}
+    user   = postgres
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = $$AutoDetect$$
+_/_/_/_/_/_/_/_/_/_/ {JDBC}
+2025-04-13 20:34:38,353 [main] INFO  (TorqueDocumentationTask#begin():193) - +------------------------------------------+
+2025-04-13 20:34:38,354 [main] INFO  (TorqueDocumentationTask#begin():194) - |                                          |
+2025-04-13 20:34:38,354 [main] INFO  (TorqueDocumentationTask#begin():195) - |                   Doc                    |
+2025-04-13 20:34:38,354 [main] INFO  (TorqueDocumentationTask#begin():203) - |                                          |
+2025-04-13 20:34:38,355 [main] INFO  (TorqueDocumentationTask#begin():204) - +------------------------------------------+
+2025-04-13 20:34:38,376 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2025-04-13 20:34:38,377 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2025-04-13 20:34:38,377 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/postgres
+2025-04-13 20:34:38,377 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = postgres
+2025-04-13 20:34:38,378 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():265) - 
+2025-04-13 20:34:38,378 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():266) - * * * * * * * * * * *
+2025-04-13 20:34:38,378 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():267) - *                   *
+2025-04-13 20:34:38,378 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():268) - *    Schema HTML    *
+2025-04-13 20:34:38,378 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():269) - *                   *
+2025-04-13 20:34:38,378 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():270) - * * * * * * * * * * *
+2025-04-13 20:34:38,398 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2025-04-13 20:34:38,433 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2025-04-13 20:34:38,433 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2025-04-13 20:34:38,433 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2025-04-13 20:34:38,434 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2025-04-13 20:34:38,434 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2025-04-13 20:34:38,435 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2025-04-13 20:34:38,436 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2025-04-13 20:34:38,436 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2025-04-13 20:34:38,438 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():88) - ==========/
+2025-04-13 20:34:38,447 [main] INFO  (DfClsDeploymentInitializer#initializeClassificationDeployment():67) - ...Initializing ClassificationDeployment: project=sampledb
+2025-04-13 20:34:38,496 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():253) - generator.parse("doc/ControlDocument.vm", ctx);
+2025-04-13 20:34:38,504 [main] INFO  (DfFlutistLog4JLogSystem#init():45) - ...Suppressing velocity.log, which is unneeded for also debug
+2025-04-13 20:34:38,601 [main] INFO  (Database#doEnableDocumentOutputDirectory():1236) - ...Setting up documentOutputDirectory: ./output/doc
+2025-04-13 20:34:38,611 [main] INFO  (DfDocumentSelector#doLoadSchemaHistory():242) - ...Loading schema history
+2025-04-13 20:34:38,633 [main] INFO  (DfDocumentSelector#doLoadSchemaHistory():246) -  -> found history: count=2
+2025-04-13 20:34:38,660 [main] INFO  (DfSchemaHtmlDataArrangeQuery#getArrangeQueryTableMap():50) -  
+2025-04-13 20:34:38,660 [main] INFO  (DfSchemaHtmlDataArrangeQuery#getArrangeQueryTableMap():51) - ...Setting up arrange queries for documents (ArrangeQueryDoc)
+2025-04-13 20:34:38,669 [main] INFO  (DfArrangeQueryDocSetupper#doExtractArrangeQuery():106) -  -> no arrange query
+2025-04-13 20:34:38,755 [main] INFO  (DfRefreshResourceProcess#show():295) - /===========================================================================
+2025-04-13 20:34:38,755 [main] INFO  (DfRefreshResourceProcess#show():295) - ...Refreshing [springbootsample] by http://localhost:8386/
+2025-04-13 20:34:38,761 [main] INFO  (DfRefreshResourceProcess#show():295) - ...Retrying refreshing by default secondary URL http://localhost:8387/
+2025-04-13 20:34:38,762 [main] INFO  (DfRefreshResourceProcess#show():295) - Failed to refresh the resources (continued): url=http://localhost:8386/, cause=ConnectException(Connection refused: connect)
+2025-04-13 20:34:38,762 [main] INFO  (DfRefreshResourceProcess#show():295) - ==========/
+2025-04-13 20:34:38,764 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m00s421ms
+
+  DBFLUTE_CLIENT: {sampledb}
+    database  = postgresql
+    language  = java
+    container = spring
+    package   = com.example.springbootsample.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/postgres
+    schema = {postgres.public as main}
+    user   = postgres
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = $$AutoDetect$$
+_/_/_/_/_/_/_/_/_/_/ {Doc}
+2025-04-13 20:34:40,560 [main] INFO  (TorqueDataModelTask#begin():110) - +------------------------------------------+
+2025-04-13 20:34:40,561 [main] INFO  (TorqueDataModelTask#begin():111) - |                                          |
+2025-04-13 20:34:40,561 [main] INFO  (TorqueDataModelTask#begin():112) - |                 Generate                 |
+2025-04-13 20:34:40,561 [main] INFO  (TorqueDataModelTask#begin():113) - |                                          |
+2025-04-13 20:34:40,561 [main] INFO  (TorqueDataModelTask#begin():114) - +------------------------------------------+
+2025-04-13 20:34:40,575 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2025-04-13 20:34:40,575 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2025-04-13 20:34:40,575 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/postgres
+2025-04-13 20:34:40,575 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = postgres
+2025-04-13 20:34:40,586 [main] INFO  (TorqueDataModelTask#setupControlTemplate():166) - 
+2025-04-13 20:34:40,587 [main] INFO  (TorqueDataModelTask#setupControlTemplate():167) - ...Using Java control: om/ControlGenerateJava.vm
+2025-04-13 20:34:40,610 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2025-04-13 20:34:40,634 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():253) - generator.parse("om/ControlGenerateJava.vm", ctx);
+2025-04-13 20:34:40,640 [main] INFO  (DfFlutistLog4JLogSystem#init():45) - ...Suppressing velocity.log, which is unneeded for also debug
+2025-04-13 20:34:40,739 [main] INFO  (Database#doEnableGenerateOutputDirectory():1204) - ...Setting up generateOutputDirectory: ../src/main/java
+2025-04-13 20:34:40,742 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2025-04-13 20:34:40,742 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2025-04-13 20:34:40,743 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2025-04-13 20:34:40,743 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2025-04-13 20:34:40,743 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2025-04-13 20:34:40,744 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2025-04-13 20:34:40,745 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2025-04-13 20:34:40,745 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2025-04-13 20:34:40,746 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():88) - ==========/
+2025-04-13 20:34:40,753 [main] INFO  (DfClsDeploymentInitializer#initializeClassificationDeployment():67) - ...Initializing ClassificationDeployment: project=sampledb
+2025-04-13 20:34:40,756 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():58) - /=============================
+2025-04-13 20:34:40,757 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():59) - ...Initializing include query.
+2025-04-13 20:34:40,757 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - String
+2025-04-13 20:34:40,757 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - Number
+2025-04-13 20:34:40,757 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - Date
+2025-04-13 20:34:40,757 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   NotEqual -> []
+2025-04-13 20:34:40,757 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   InScope -> []
+2025-04-13 20:34:40,757 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   NotInScope -> []
+2025-04-13 20:34:40,757 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - OrderBy
+2025-04-13 20:34:40,758 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():61) - ========/
+2025-04-13 20:34:40,765 [main] INFO  (Database#info():2891) - public void parseAllCommon() {
+2025-04-13 20:34:40,767 [main] INFO  (Database#info():2891) -     parse('DBCurrent');
+2025-04-13 20:34:40,770 [main] INFO  (Database#info():2891) -     parse('DBFluteConfig');
+2025-04-13 20:34:40,776 [main] INFO  (Database#info():2891) -     parse('DBFluteInitializer');
+2025-04-13 20:34:40,780 [main] INFO  (Database#info():2891) -     parse('DBMetaInstanceHandler');
+2025-04-13 20:34:40,791 [main] INFO  (Database#info():2891) -     parse('EntityDefinedCommonColumn');
+2025-04-13 20:34:40,793 [main] INFO  (Database#info():2891) -     parse('ImplementedBehaviorSelector');
+2025-04-13 20:34:40,797 [main] INFO  (Database#info():2891) -     parse('ImplementedCommonColumnAutoSetupper');
+2025-04-13 20:34:40,802 [main] INFO  (Database#info():2891) -     parse('ImplementedInvokerAssistant');
+2025-04-13 20:34:40,806 [main] INFO  (Database#info():2891) -     parse('ImplementedSqlClauseCreator');
+2025-04-13 20:34:40,810 [main] INFO  (Database#info():2891) - }
+2025-04-13 20:34:40,811 [main] INFO  (Database#info():2891) - public void parseContainerConfig() {
+2025-04-13 20:34:40,812 [main] INFO  (Database#info():2891) -     parse('com\example\springbootsample\dbflute\allcommon\DBFluteBeansJavaConfig.java')
+2025-04-13 20:34:40,825 [main] INFO  (Database#info():2891) - }
+2025-04-13 20:34:40,829 [main] INFO  (DfOldClassHandler#info():1045) - public void deleteOldTableClass() {
+2025-04-13 20:34:40,841 [main] INFO  (DfOldClassHandler#info():1045) - }
+2025-04-13 20:34:40,841 [main] INFO  (Database#info():2891) - public void parseTableClass() {
+2025-04-13 20:34:40,841 [main] INFO  (Database#info():2891) -     parse('id_test');
+2025-04-13 20:34:40,947 [main] INFO  (Database#info():2891) -     parse('key_test');
+2025-04-13 20:34:40,987 [main] INFO  (Database#info():2891) -     parse('test_table');
+2025-04-13 20:34:41,026 [main] INFO  (Database#info():2891) - }
+2025-04-13 20:34:41,026 [main] INFO  (Database#info():2891) -  
+2025-04-13 20:34:41,052 [main] INFO  (DfRefreshResourceProcess#show():295) - /===========================================================================
+2025-04-13 20:34:41,052 [main] INFO  (DfRefreshResourceProcess#show():295) - ...Refreshing [springbootsample] by http://localhost:8386/
+2025-04-13 20:34:41,054 [main] INFO  (DfRefreshResourceProcess#show():295) - ...Retrying refreshing by default secondary URL http://localhost:8387/
+2025-04-13 20:34:41,055 [main] INFO  (DfRefreshResourceProcess#show():295) - Failed to refresh the resources (continued): url=http://localhost:8386/, cause=ConnectException(Connection refused: connect)
+2025-04-13 20:34:41,055 [main] INFO  (DfRefreshResourceProcess#show():295) - ==========/
+2025-04-13 20:34:41,061 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m00s506ms
+
+  DBFLUTE_CLIENT: {sampledb}
+    database  = postgresql
+    language  = java
+    container = spring
+    package   = com.example.springbootsample.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/postgres
+    schema = {postgres.public as main}
+    user   = postgres
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = $$AutoDetect$$
+_/_/_/_/_/_/_/_/_/_/ {Generate}
+2025-04-13 20:34:41,723 [main] INFO  (DfOutsideSqlTestTask#begin():77) - +------------------------------------------+
+2025-04-13 20:34:41,724 [main] INFO  (DfOutsideSqlTestTask#begin():78) - |                                          |
+2025-04-13 20:34:41,724 [main] INFO  (DfOutsideSqlTestTask#begin():79) - |              OutsideSqlTest              |
+2025-04-13 20:34:41,724 [main] INFO  (DfOutsideSqlTestTask#begin():80) - |                                          |
+2025-04-13 20:34:41,724 [main] INFO  (DfOutsideSqlTestTask#begin():81) - +------------------------------------------+
+2025-04-13 20:34:41,739 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2025-04-13 20:34:41,739 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2025-04-13 20:34:41,739 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/postgres
+2025-04-13 20:34:41,739 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = postgres
+2025-04-13 20:34:41,758 [main] INFO  (DfSqlFileFireMan#fire():93) - Fired SQL: success=0, failure=0 (in 0 files)
+2025-04-13 20:34:41,763 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m00s046ms
+
+  DBFLUTE_CLIENT: {sampledb}
+    database  = postgresql
+    language  = java
+    container = spring
+    package   = com.example.springbootsample.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/postgres
+    schema = {postgres.public as main}
+    user   = postgres
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = $$AutoDetect$$
+
+ {Checked SQL}
+_/_/_/_/_/_/_/_/_/_/ {OutsideSqlTest}
+2025-04-13 20:34:42,337 [main] INFO  (DfSql2EntityTask#begin():106) - +------------------------------------------+
+2025-04-13 20:34:42,339 [main] INFO  (DfSql2EntityTask#begin():107) - |                                          |
+2025-04-13 20:34:42,339 [main] INFO  (DfSql2EntityTask#begin():108) - |                Sql2Entity                |
+2025-04-13 20:34:42,340 [main] INFO  (DfSql2EntityTask#begin():109) - |                                          |
+2025-04-13 20:34:42,340 [main] INFO  (DfSql2EntityTask#begin():110) - +------------------------------------------+
+2025-04-13 20:34:42,354 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2025-04-13 20:34:42,354 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2025-04-13 20:34:42,354 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/postgres
+2025-04-13 20:34:42,355 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = postgres
+2025-04-13 20:34:42,364 [main] INFO  (DfSql2EntityTask#setupControlTemplate():177) - 
+2025-04-13 20:34:42,364 [main] INFO  (DfSql2EntityTask#setupControlTemplate():178) - ...Using Java control: om/ControlSql2EntityJava.vm
+2025-04-13 20:34:42,369 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2025-04-13 20:34:42,400 [main] INFO  (DfSqlFileFireMan#fire():93) - Fired SQL: success=0, failure=0 (in 0 files)
+2025-04-13 20:34:42,424 [main] INFO  (DfSql2EntityTask#initControlContext():311) - 
+2025-04-13 20:34:42,424 [main] INFO  (DfSql2EntityTask#initControlContext():312) - ...Preparing generation of customize-entities and parameter-beans
+2025-04-13 20:34:42,424 [main] INFO  (DfSql2EntityTask#initControlContext():313) - * * * * * * * * * *
+2025-04-13 20:34:42,424 [main] INFO  (DfSql2EntityTask#initControlContext():314) - * CustomizeEntity *
+2025-04-13 20:34:42,424 [main] INFO  (DfSql2EntityTask#initControlContext():315) - * * * * * * * * * *
+2025-04-13 20:34:42,424 [main] INFO  (DfSql2EntityTask#showParameterBean():936) - * * * * * * * * *
+2025-04-13 20:34:42,424 [main] INFO  (DfSql2EntityTask#showParameterBean():937) - * ParameterBean *
+2025-04-13 20:34:42,424 [main] INFO  (DfSql2EntityTask#showParameterBean():938) - * * * * * * * * *
+2025-04-13 20:34:42,427 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():253) - generator.parse("om/ControlSql2EntityJava.vm", ctx);
+2025-04-13 20:34:42,433 [main] INFO  (DfFlutistLog4JLogSystem#init():45) - ...Suppressing velocity.log, which is unneeded for also debug
+2025-04-13 20:34:42,523 [main] INFO  (DfClsDeploymentInitializer#initializeClassificationDeployment():67) - ...Initializing ClassificationDeployment: project=sampledb
+2025-04-13 20:34:42,523 [main] INFO  (DfClsDeploymentInitializer#initializeClassificationDeployment():67) - ...Initializing ClassificationDeployment: project=sampledb
+2025-04-13 20:34:42,526 [main] INFO  (Database#doEnableSql2EntityOutputDirectory():1220) - ...Setting up sql2EntityOutputDirectory: ../src/main/java
+2025-04-13 20:34:42,527 [main] INFO  (DfOldClassHandler#info():1045) - public void deleteOldCustomizeClass() {
+2025-04-13 20:34:42,533 [main] INFO  (DfOldClassHandler#info():1045) - }
+2025-04-13 20:34:42,533 [main] INFO  (Database#info():2891) - public void parseCustomizeEntity() {
+2025-04-13 20:34:42,535 [main] INFO  (Database#info():2891) - }
+2025-04-13 20:34:42,548 [main] INFO  (DfSql2EntityTask#showTargetSqlFileInformation():303) - 
+/- - - - - - - - - - - - - - - - - - - - - - - -
+Target SQL files: 0
+
+- - - - - - - - - -/
+2025-04-13 20:34:42,551 [main] INFO  (DfRefreshResourceProcess#show():295) - /===========================================================================
+2025-04-13 20:34:42,552 [main] INFO  (DfRefreshResourceProcess#show():295) - ...Refreshing [springbootsample] by http://localhost:8386/
+2025-04-13 20:34:42,552 [main] INFO  (DfRefreshResourceProcess#show():295) - ...Retrying refreshing by default secondary URL http://localhost:8387/
+2025-04-13 20:34:42,553 [main] INFO  (DfRefreshResourceProcess#show():295) - Failed to refresh the resources (continued): url=http://localhost:8386/, cause=ConnectException(Connection refused: connect)
+2025-04-13 20:34:42,553 [main] INFO  (DfRefreshResourceProcess#show():295) - ==========/
+2025-04-13 20:34:42,556 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m00s227ms
+
+  DBFLUTE_CLIENT: {sampledb}
+    database  = postgresql
+    language  = java
+    container = spring
+    package   = com.example.springbootsample.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/postgres
+    schema = {postgres.public as main}
+    user   = postgres
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = $$AutoDetect$$
+_/_/_/_/_/_/_/_/_/_/ {Sql2Entity}
