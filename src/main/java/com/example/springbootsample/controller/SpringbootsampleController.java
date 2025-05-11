@@ -71,4 +71,12 @@ public class SpringbootsampleController {
 		mav.addObject("msg", "こんにちは" + String.valueOf(idBhv.selectCount(cb->{})) + "件です！");
 		return mav;
 	}
+
+	@GetMapping("/detail")
+	public ModelAndView detail(@PathVariable String id,ModelAndView mav) {
+
+		mav.setViewName("index3");
+		mav.addObject("msg", "こんにちは" + String.valueOf(idBhv.selectByPK(id).get().toString()) + "件です！");
+		return mav;
+	}
 }
